@@ -9,13 +9,82 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource  {
+
+    
 
     var window: UIWindow?
+    
+    
+    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
+//        code
+        
+        let userInfo = RCUserInfo()
+        
+        switch userId {
+        case "xiaobo":
+            userInfo.portraitUri = "http://img.25pp.com/uploadfile/youxi/images/2014/1202/20141202105822882.jpg"
+        case "xiaobo2":
+            userInfo.portraitUri = "http://img.25pp.com/uploadfile/youxi/images/2014/1202/20141202105822882.jpg"
+        default:
+            print("无此用户")
+            
+       
+        }
+        return completion(userInfo)
+        
+        
+    }
+    
+    
+    func connectServer(completion:() -> Void ) {
+//        获取保存的Token
+//     let  deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken")
+//        初始化AppKey
+        RCIM.sharedRCIM().initWithAppKey("25wehl3uwn5tw")
+        
+        
+        
+        
+        
+        
+        //        用token测试连接
+        RCIM.sharedRCIM().connectWithToken("Gf4obtxU3QGTLkj6DUWQALvtllc5X3RrZIKYKunqx9vqUNoFWz2kXQK0IksbuFfaZXKDM1q/NQnyHcUN8QunVQ==", success: { (_) -> Void in
+            print("连接成功")
+            
+            let currentUserInfo = RCUserInfo(userId: "xiaobo", name: "小波", portrait: "http://img.25pp.com/uploadfile/youxi/images/2014/1202/20141202105822882.jpg")
+            RCIMClient.sharedRCIMClient().currentUserInfo = currentUserInfo
+            
+            print("连接成功app1")
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                completion()
+            })
+  
+            }, error: { (_) -> Void in
+                print("连接失败")
+            }) { () -> Void in
+                print("Token不正确,或已经失效")
+        }
+        
+        }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+//        查询保存的token
+//        let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
+        
+//        初始化appkey
+   RCIM.sharedRCIM().initWithAppKey("25wehl3uwn5tw")
+//      RCIM.sharedRCIM().initWithAppKey("25wehl3uwn5tw",  deviceToken: deviceTokenCache)
+        
+//        设置用户信息提供者为自己 AppDelegate
+        RCIM.sharedRCIM().userInfoDataSource = self
+
+        
+        
+        
         return true
     }
 

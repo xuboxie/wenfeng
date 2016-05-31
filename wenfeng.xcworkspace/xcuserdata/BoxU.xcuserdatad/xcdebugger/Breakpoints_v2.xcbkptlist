@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wenfeng/ConversationListViewController.swift"
+            timestampString = "485639711.296717"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wenfeng/ConversationListViewController.swift"
+            timestampString = "485639711.296717"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wenfeng/AppDelegate.swift"
+            timestampString = "486289530.219346"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wenfeng.AppDelegate.window.getter : Swift.Optional&lt;ObjectiveC.UIWindow&gt;"
+                  moduleName = "wenfeng"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BoxU/Desktop/SWIFT/wenfeng/wenfeng/wenfeng/AppDelegate.swift"
+                  timestampString = "486201330.250616"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wenfeng.AppDelegate.window.setter : Swift.Optional&lt;ObjectiveC.UIWindow&gt;"
+                  moduleName = "wenfeng"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BoxU/Desktop/SWIFT/wenfeng/wenfeng/wenfeng/AppDelegate.swift"
+                  timestampString = "486201330.250921"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wenfeng.AppDelegate.window.materializeForSet : Swift.Optional&lt;ObjectiveC.UIWindow&gt;"
+                  moduleName = "wenfeng"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BoxU/Desktop/SWIFT/wenfeng/wenfeng/wenfeng/AppDelegate.swift"
+                  timestampString = "486201330.25115"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wenfeng.AppDelegate.init (wenfeng.AppDelegate.Type)() -&gt; wenfeng.AppDelegate"
+                  moduleName = "wenfeng"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BoxU/Desktop/SWIFT/wenfeng/wenfeng/wenfeng/AppDelegate.swift"
+                  timestampString = "486201330.251375"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
